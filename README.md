@@ -97,14 +97,6 @@ A API pode responder com:
 
 ---
 
-## 💡 Sugestão de melhoria futura
-
-- Armazenamento temporário em `MEDIA_ROOT`
-- Autenticação de usuários
-- Histórico de conversões
-
----
-
 ## 👨‍💻 Autor
 
 Lucas Finatti  
