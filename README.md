@@ -79,10 +79,10 @@ multipart/form-data
 
 ## 📥 Download do arquivo
 
-A API pode responder com:
+A API vai responder com:
 - Um **arquivo binário** (`Content-Disposition: attachment`)  
 **ou**
-- Um campo `download_url` para baixar o arquivo processado.
+- Um campo `download_url` para baixar o arquivo processado. (TODO)
 
 ---
 
