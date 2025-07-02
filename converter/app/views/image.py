@@ -1,5 +1,3 @@
-from django.http import HttpRequest
-from django.shortcuts import render
 from rest_framework.decorators import api_view
 from rest_framework.request import Request
 
@@ -46,7 +44,6 @@ def img_convert(request: Request):
                 status_code=500
             ).to_drf_response()
 
-        # Retorna a imagem convertida para download
         content_type = f"image/{extension.lstrip('.')}"
         response = HttpResponse(converted_buffer.getvalue(), content_type=content_type)
         response['Content-Disposition'] = f'attachment; filename="converted{extension}"'
