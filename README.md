@@ -77,30 +77,6 @@ multipart/form-data
 
 ---
 
-## ✅ Exemplo de resposta (JSON)
-
-```json
-{
-  "success": true,
-  "message": "Imagem processada com sucesso",
-  "data": {
-    "filename": "imagem_convertida.jpg",
-    "extension": ".jpg",
-    "metadata": {
-      "format": "JPEG",
-      "width": 1280,
-      "height": 720,
-      "mode": "RGB",
-      "info": {}
-    }
-  }
-}
-```
-
-⚠️ A resposta do vídeo pode conter apenas os dados e o link para download, dependendo da sua implementação.
-
----
-
 ## 📥 Download do arquivo
 
 A API pode responder com:
@@ -117,6 +93,8 @@ A API pode responder com:
 - Pillow (`pip install pillow`)
 - Django + Django REST Framework
 
+*Run:* pip install -r requirements.txt
+
 ---
 
 ## 💡 Sugestão de melhoria futura
@@ -130,4 +108,4 @@ A API pode responder com:
 ## 👨‍💻 Autor
 
 Lucas Finatti  
-💼 Engenheiro de Software Fullstack  
+💼 Engenheiro de Software 
