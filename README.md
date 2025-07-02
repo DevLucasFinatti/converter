@@ -108,4 +108,4 @@ A API pode responder com:
 ## 👨‍💻 Autor
 
 Lucas Finatti  
-💼 Engenheiro de Software 
+😎💼 Engenheiro de Software 
