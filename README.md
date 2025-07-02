@@ -1,4 +1,4 @@
-# 🎥🖼️ Conversor de Arquivos - Vídeo e Imagem (Django + FFmpeg + Pillow)
+# 🎥🖼️ Conversor de Arquivos - Vídeo e Imagem
 
 Este projeto fornece uma API simples para **converter arquivos de imagem e vídeo** para diferentes formatos, utilizando `multipart/form-data`.
 
