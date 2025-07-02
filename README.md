@@ -1,19 +1,20 @@
-# 🎥🖼️ Conversor de Arquivos - Vídeo e Imagem
 
-Este projeto fornece uma API simples para **converter arquivos de imagem e vídeo** para diferentes formatos, utilizando `multipart/form-data`.
+# 🎥🖼️ File Converter - Video and Image
+
+This project provides a simple API to **convert image and video files** to different formats using `multipart/form-data`.
 
 ---
 
-## 🚀 Tecnologias utilizadas
+## 🚀 Technologies Used
 
 - **Django**
 - **Django REST Framework**
-- **Pillow** (para manipulação de imagens)
-- **FFmpeg** (para conversão de vídeos)
+- **Pillow** (for image processing)
+- **FFmpeg** (for video conversion)
 
 ---
 
-## 🌐 URL Base da API
+## 🌐 Base API URL
 
 ```
 http://127.0.0.1:8000/api/
@@ -21,11 +22,11 @@ http://127.0.0.1:8000/api/
 
 ---
 
-## 📸 Rota: `/convert-img/`
+## 📸 Route: `/convert-img/`
 
-Converte **imagens** de um formato para outro (ex: `.png → .jpg`, `.webp → .png`, etc).
+Converts **images** from one format to another (e.g., `.png → .jpg`, `.webp → .png`, etc).
 
-### 🔧 Método:
+### 🔧 Method:
 ```
 POST
 ```
@@ -35,25 +36,25 @@ POST
 multipart/form-data
 ```
 
-### 🧵 Campos esperados:
+### 🧵 Expected Fields:
 
-| Chave       | Tipo     | Descrição                                      |
-|-------------|----------|-----------------------------------------------|
-| `file`      | Arquivo  | A imagem que será convertida                  |
-| `extension` | Texto    | Extensão de destino (ex: `.jpg`, `.png`)      |
+| Key         | Type     | Description                                 |
+|-------------|----------|---------------------------------------------|
+| `file`      | File     | The image to be converted                   |
+| `extension` | Text     | Target extension (e.g., `.jpg`, `.png`)     |
 
-### 🧪 Exemplo no Postman:
+### 🧪 Postman Example:
 
-- **Key**: `file` → selecione uma imagem
+- **Key**: `file` → select an image
 - **Key**: `extension` → `.png`
 
 ---
 
-## 🎞️ Rota: `/convert-video/`
+## 🎞️ Route: `/convert-video/`
 
-Converte **vídeos** de um formato para outro (ex: `.avi → .mp4`, `.mov → .webm`, etc).
+Converts **videos** from one format to another (e.g., `.avi → .mp4`, `.mov → .webm`, etc).
 
-### 🔧 Método:
+### 🔧 Method:
 ```
 POST
 ```
@@ -63,41 +64,41 @@ POST
 multipart/form-data
 ```
 
-### 🧵 Campos esperados:
+### 🧵 Expected Fields:
 
-| Chave       | Tipo     | Descrição                                      |
-|-------------|----------|-----------------------------------------------|
-| `file`      | Arquivo  | O vídeo que será convertido                   |
-| `extension` | Texto    | Extensão de destino (ex: `.mp4`, `.webm`)     |
+| Key         | Type     | Description                                 |
+|-------------|----------|---------------------------------------------|
+| `file`      | File     | The video to be converted                   |
+| `extension` | Text     | Target extension (e.g., `.mp4`, `.webm`)     |
 
-### 🧪 Exemplo no Postman:
+### 🧪 Postman Example:
 
-- **Key**: `file` → selecione um vídeo
+- **Key**: `file` → select a video
 - **Key**: `extension` → `.mp4`
 
 ---
 
-## 📥 Download do arquivo
+## 📥 File Download
 
-A API vai responder com:
-- Um **arquivo binário** (`Content-Disposition: attachment`)  
-**ou**
-- Um campo `download_url` para baixar o arquivo processado. (TODO)
+The API will respond with:
+- A **binary file** (`Content-Disposition: attachment`)  
+**or**
+- A `download_url` field to download the processed file. (TODO)
 
 ---
 
-## 🧰 Requisitos para rodar localmente
+## 🧰 Requirements to Run Locally
 
 - Python 3.11+
-- FFmpeg instalado e disponível no `PATH`
+- FFmpeg installed and available in the system `PATH`
 - Pillow (`pip install pillow`)
 - Django + Django REST Framework
 
-*Run:* pip install -r requirements.txt
+*Run:* `pip install -r requirements.txt`
 
 ---
 
-## 👨‍💻 Autor
+## 👨‍💻 Author
 
 Lucas Finatti  
-😎💼 Engenheiro de Software 
+😎💼 Software Engineer
